@@ -24,9 +24,23 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```
+class Name:
+    def __init__(self,name):
+        self.name = name
+        
+    def display(self):
+        print("Hello "+ self.name)
+
+name = input()
+s = Name(name)
+print("This is non parametrized constructor")
+s.display()
 
 ```
 
 ### OUTPUT
+<img width="1165" height="280" alt="image" src="https://github.com/user-attachments/assets/2711510d-f442-49dd-b8f4-f3e856b90875" />
+
 
 ### RESULT
+Thus, the Python program to create a class with a parameterized constructor that accepts a name and displays a greeting using a class method has been implemented and executed successfully.
