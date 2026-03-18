@@ -32,14 +32,43 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
+class Addition:
+    def add(self, a, b):
+        return a + b
+
+class Multiplication:
+    def multiply(self, a, b):
+        return a * b
+
+class Division:
+    def divide(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            return "Division by zero is not allowed."
+
+class Calculator(Addition, Multiplication, Division):
+    def calculate(self, a, b):
+        addition = self.add(a, b)
+        multiplication = self.multiply(a, b)
+        division = self.divide(a, b)
+        return addition, multiplication, division
+
+if __name__ == "__main__":
+    num1 = int(input())
+    num2 = int(input())
+    calc = Calculator()
+    add_result, mul_result, div_result = calc.calculate(num1, num2)
+    print(f"{add_result}")
+    print(f"{mul_result}")
+    print(f"{div_result}")
+
 
 ```
 
 ### OUTPUT
+<img width="832" height="245" alt="image" src="https://github.com/user-attachments/assets/faf64388-8232-4588-97be-d6e7ecc4da7b" />
 
 
 ### RESULT
-
-
-
-
+Thus, the Python program to perform addition, multiplication, and division using multiple inheritance has been implemented and executed successfully.
